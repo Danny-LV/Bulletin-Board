@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Создание объявления</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                width: 50%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f7f7f7;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            label {
+                font-weight: bold;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            textarea {
+                width: 100%;
+                max-width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                overflow-y: auto;
+            }
+            input[type="submit"] {
+                background-color: #337ab7;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Создание нового объявления</h2>
+            <form method="post" action="create_ad.php">
+                <div>
+                    <label for="title">Заголовок:</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div>
+                    <label for="description">Описание:</label>
+                    <textarea name="description" id="description" rows="4" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Создать объявление">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
